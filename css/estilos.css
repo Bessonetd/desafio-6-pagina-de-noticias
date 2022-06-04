@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Noto+Serif:ital@1&family=Tiro+Telugu:ital@1&family=Titillium+Web:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #ffa500;
+  text-align: center;
+  width: 100%;
+}
+header nav {
+  word-spacing: 50px;
+  font-size: 30px;
+}
+header nav ul {
+  font-family: "Noto Serif", serif;
+}
+header nav ul li {
+  list-style: none;
+  display: inline;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #000000;
+}
+header nav ul li a:hover {
+  color: #006e60;
+}
+header h1 {
+  font-family: "Tiro Telugu", serif;
+  font-size: 50px;
+}
+header h1 span {
+  color: #5b1a00;
+}
+
+main {
+  background-color: #dfe0df;
+  width: 100%;
+}
+main .noticia {
+  display: grid;
+  grid-template-areas: "h2 h2 h2 h2" "not1 not1 not2 not2" "not1 not1 not2 not2" "not3 not3 not3 not3" "not3 not3 not3 not3";
+  grid-column-gap: 20px;
+  grid-row-gap: 10px;
+}
+main .noticia h2 {
+  text-align: center;
+  font-family: "Abel", sans-serif;
+  font-size: 40px;
+  color: #5b1a00;
+  grid-area: h2;
+}
+main .noticia h3 {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 30px;
+  color: #006e60;
+}
+main .noticia .noticia1 {
+  grid-area: not1;
+  margin-left: 20px;
+}
+main .noticia .noticia1 img {
+  width: 80%;
+  padding-left: 30px;
+}
+main .noticia .noticia2 {
+  grid-area: not2;
+}
+main .noticia .noticia2 img {
+  width: 80%;
+}
+main .noticia .noticia3 {
+  grid-area: not3;
+  text-align: justify;
+  margin-left: 20px;
+}
+main .noticia .noticia3 img {
+  width: 90%;
+  padding-left: 90px;
+}
+
+.publicidad {
+  width: 100%;
+  height: 300px;
+  background-image: url(../img/img4.jpg);
+  background-size: contain;
+  background-position: bottom;
+  color: #006e60;
+}
+
+.videos {
+  width: 100%;
+  font-family: "Abel", sans-serif;
+  color: #5b1a00;
+  text-align: center;
+  font-size: 30px;
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+  font-family: "Titillium Web", sans-serif;
+  background-color: #ffa500;
+  text-align: center;
+  font-size: 27px;
+  word-spacing: 10px;
+  text-transform: uppercase;
+  color: #5b1a00;
+}
+footer i {
+  letter-spacing: 20px;
+}
+footer i:hover {
+  color: #006e60;
+}
+
+/*# sourceMappingURL=estilos.css.map */

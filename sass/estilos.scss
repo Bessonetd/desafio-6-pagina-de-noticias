@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Noto+Serif:ital@1&family=Tiro+Telugu:ital@1&family=Titillium+Web:wght@300&display=swap');
+
+$color1: #ffa500;
+$color2: #5b1a00;
+$color3: #006e60;
+$color4: #dfe0df;
+$color5: #000000;
+
+$font1:'Abel', sans-serif;
+$font2:'Noto Serif', serif;
+$font3:'Tiro Telugu', serif;
+$font4:'Titillium Web', sans-serif;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// inicio header
+header{
+    background-color: $color1;
+    text-align: center;
+    width: 100%;
+
+    nav{
+        word-spacing: 50px;
+        font-size: 30px;
+
+        ul{
+            font-family: $font2;
+            
+            li{
+                list-style: none;
+                display: inline;
+                
+                a{
+                    text-decoration: none;
+                    color: $color5;
+
+                    &:hover{
+                        color: $color3;
+                    }
+                }
+            }
+        }
+    }
+
+    h1{
+        font-family: $font3;
+        font-size: 50px;
+
+        span{
+            color: $color2;
+        }
+    }
+}
+// fin header
+
+// inicio main
+
+// inicio section notcia
+main{
+    background-color: $color4;
+    width: 100%;
+
+    .noticia{
+        display: grid;
+        grid-template-areas: "h2 h2 h2 h2"
+                            "not1 not1 not2 not2"
+                            "not1 not1 not2 not2"
+                            "not3 not3 not3 not3"
+                            "not3 not3 not3 not3";
+        grid-column-gap: 20px;
+        grid-row-gap: 10px;                                                          
+
+        
+        h2{
+        text-align: center;
+        font-family: $font1;
+        font-size: 40px;
+        color: $color2;
+        grid-area: h2;
+    }
+        h3{
+            font-family: $font4;
+            font-size: 30px;
+            color: $color3;
+        }
+        .noticia1{
+            grid-area: not1;
+            margin-left: 20px;
+
+            img{
+                width: 80%;
+                padding-left: 30px;
+            }
+
+        }
+
+        .noticia2{
+            grid-area: not2;
+
+            img{
+                width: 80%;
+            }
+        }
+
+        .noticia3{
+            grid-area: not3;
+            text-align: justify;
+            margin-left: 20px;
+
+            img{
+                width: 90%;
+                padding-left: 90px;
+            }
+        }
+    }
+}
+// fin section noticia
+
+// inicio section publicidad
+.publicidad{
+    width: 100%;
+    height: 300px;
+    background-image: url(../img/img4.jpg);
+    background-size: contain;
+    background-position: bottom;
+    color: $color3;
+    
+}
+// fin section publicidad
+
+// inicio section video
+.videos{
+    width: 100%;
+    font-family: $font1;
+    color: $color2;
+    text-align: center;
+    font-size: 30px;
+}
+// fin section video
+
+// fin main
+
+// inicio footer
+footer{
+    width: 100%;
+    height: 100px;
+    font-family: $font4;
+    background-color: $color1;
+    text-align: center;
+    font-size: 27px;
+    word-spacing: 10px;
+    text-transform: uppercase;
+    color: $color2;
+    
+    i{
+        letter-spacing: 20px;
+
+        &:hover{
+            color: $color3;
+        }
+    }
+}
+// fin footer
